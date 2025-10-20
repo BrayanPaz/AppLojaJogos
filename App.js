@@ -12,7 +12,15 @@ const Drawer = createDrawerNavigator();
 export default function App() {
     return (
         <NavigationContainer>
-            <Drawer.Navigator initialRouteName="Sobre">
+            <Drawer.Navigator 
+            initialRouteName="Catalogo"
+            screenOptions={{
+                headerStyle: { backgroundColor: '#1E90FF' },
+                headerTintColor: '#fff',
+                drawerActiveBackgroundColor: '#87CEFA',
+                drawerActiveTintColor: '#fff',
+                drawerInactiveTintColor: '#000',
+            }}>
                 <Drawer.Screen name="Catalogo" component={Catalogo} />
                 <Drawer.Screen name="Carrinho" component={Carrinho} />
                 <Drawer.Screen name="Biblioteca" component={Biblioteca} />

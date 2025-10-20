@@ -11,10 +11,11 @@ export default StyleSheet.create({
     },
     texto: {
         fontSize: 20,
-        allignItems: 'center',
+        alignItems: 'center', // corrigido spelling
         justifyContent: 'center',
         textAlign: 'center',
         margin: 10,
+        color: '#fff',
     },
     rodape: {
         fontSize: 12,
@@ -23,27 +24,18 @@ export default StyleSheet.create({
         right: 0,
         textAlign: 'right',
         padding: 10,
-        color: '#424242ff',
+        color: '#fff',
     },
-    mapa: {
-        width: '100%',
-        height: '100%',
+    localMapa: {
+        width: '80%',
+        height: '80%',
     },
-    titulo: {
+    localTitulo: {
         fontSize: 24,
         fontWeight: 'bold',
         marginBottom: 20,
-    },
-    item: {
-        fontSize: 18,
-        marginVertical: 5,
-    },
-    lista: {
-        backgroundColor: '#57a0ff84',
-        alignItems: 'center',
-        justifyContent: 'center',
+        color: '#fff',
 
-        borderRadius: 30
     },
     catalogo: {
         flex: 1,
@@ -53,6 +45,51 @@ export default StyleSheet.create({
         flexDirection: 'column',
         flexWrap: 'wrap',
         alignContent: 'space-evenly',
-        rowGap: '4%',
-    }
-});
+    },
+    catalogoListaRow: {
+        justifyContent: 'space-evenly', // separa colunas
+    },
+    catalogoLista: {
+        paddingHorizontal: 8,
+        paddingVertical: 12,
+    },
+    catalogoItem: {
+        backgroundColor: '#ffffff3d',
+        borderRadius: 8,
+        padding: 16,
+        marginBottom: 16,
+        alignItems: 'center',
+        width: '45%',
+        aspectRatio: 1
+    },
+    jogoNome: {
+        fontSize: 16,
+        fontWeight: 'bold',
+        marginBottom: 8,
+    },
+    jogoPreco: {
+        fontSize: 14,
+        color: '#888',
+    },
+    catalogoItemBotao: {
+        borderRadius: 8,
+        marginTop: 12,
+        backgroundColor: '#427cb9ff',
+    },
+    catalogoItemBotaoTexto: {
+        color: '#fff',
+        textAlign: 'center',
+        padding: 12,
+    },
+    catalogoItemBotaoDesabilitado: {
+        borderRadius: 8,
+        marginTop: 12,
+        backgroundColor: '#272727ff',
+    },
+    jogoImagem: {
+        width: '100%',
+        height: 100,
+        marginBottom: 8,
+        resizeMode: 'contain',
+    },
+})
