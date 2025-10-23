@@ -1,4 +1,4 @@
-import { ImageBackground, Pressable, Text, View } from 'react-native'
+import { ImageBackground, Text, View, FlatList, Pressable, Image } from 'react-native'
 import { useNavigation } from '@react-navigation/native'
 import { useState } from 'react'
 import styles from '../style'
