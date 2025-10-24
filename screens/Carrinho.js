@@ -107,7 +107,7 @@ export default function About() {
             <Text style={{ fontSize: 18, fontWeight: "bold", marginBottom: 10, color: "#ffffffff", position: "absolute", bottom: 110}} >
                 Total: R$ {pagar.toFixed(2).replace('.', ',')}
             </Text>
-            <Pressable style={styles.botaoPagar} onPress={() => {setCarrinho([]); setVisivel2(true)}} >
+            <Pressable style={styles.botaoPagar} onPress={() => {setVisivel2(true)}} >
                 <Text style={styles.catalogoItemBotaoTexto}>
                     Pagar
                 </Text>
@@ -129,11 +129,14 @@ export default function About() {
                     borderColor: "#333333",
                 }}
             >
-                <Pressable onPress={() => { setVisivel2(false); }} style={{ position: "absolute", top: 12, right: 12, zIndex: 10, padding: 6 }}>
-                    <Text style={{ fontWeight: "bold", fontSize: 20 }} >
+                <Pressable onPress={() => { {setVisivel2(false); setCarrinho([])} }} style={{ position: "absolute", top: 12, right: 12, zIndex: 10, padding: 6 }}>
+                    <Text style={{ fontWeight: "bold", fontSize: 20, color: "#ffffffff" }} >
                         x
                     </Text>
                 </Pressable>
+                <Text style={{ fontSize: 16, marginBottom: 20, paddingHorizontal: 10, color: "#ffffffff", textAlign: "center" }} >
+                    Valor pago: R$ {pagar.toFixed(2).replace('.', ',')}
+                </Text>
                 <Text style={{ fontSize: 18, fontWeight: "bold", marginBottom: 10, color: "#ffffffff"  }} >
                     Pagamento realizado com sucesso!
                 </Text>

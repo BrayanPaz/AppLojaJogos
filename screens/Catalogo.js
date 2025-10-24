@@ -5,7 +5,6 @@ import {
     FlatList,
     Pressable,
     Image,
-    TouchableOpacity,
 } from "react-native";
 import { useNavigation } from "@react-navigation/native";
 import { useState } from "react";
@@ -141,7 +140,7 @@ export default function About() {
                                 }}
                             >
                                 <Pressable onPress={() => { setVisivel(false); }} style={{ position: "absolute", top: 12, right: 12, zIndex: 10, padding: 6 }}>
-                                    <Text style={{ fontWeight: "bold", fontSize: 20 }} >
+                                    <Text style={{ fontWeight: "bold", fontSize: 20, color: "#ffffffff" }} >
                                         x
                                     </Text>
                                 </Pressable>

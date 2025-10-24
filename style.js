@@ -107,4 +107,48 @@ export default StyleSheet.create({
         bottom: 60,
         backgroundColor: "#3ecc51ff",
     },
+    logarTitulo: {
+        fontSize: 24,
+        fontWeight: "bold",
+        marginBottom: 20,
+        color: "#fff",
+    },
+    logarEmail: {
+        width: 300,
+        height: 40,
+        backgroundColor: "#ffffffaa",
+        borderRadius: 8,
+        paddingHorizontal: 10,
+        marginBottom: 12,
+        color: "#000",
+    },
+    logarSenha: {
+        width: 300,
+        height: 40,
+        backgroundColor: "#ffffffaa",
+        borderRadius: 8,
+        paddingHorizontal: 10,
+        marginBottom: 20,
+        color: "#000",
+    },
+    logarBotao: {
+        width: 300,
+        borderRadius: 8,
+        backgroundColor: "#1E90FF",
+    },
+    logarBotaoTexto: {
+        color: "#fff",
+        textAlign: "center",
+        padding: 12,
+    },
+    deslogarBotao: {
+        width: 300,
+        borderRadius: 8,
+        backgroundColor: "#FF4500",
+    },
+    deslogarBotaoTexto: {
+        color: "#fff",
+        textAlign: "center",
+        padding: 12,
+    },
 });
