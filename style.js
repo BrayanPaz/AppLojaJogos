@@ -58,23 +58,27 @@ export default StyleSheet.create({
         padding: 16,
         marginBottom: 16,
         alignItems: "center",
+        justifyContent: "center",
         width: "46%",
         height: 275,
     },
     jogoNome: {
+        flex: 1,
         fontSize: 16,
         fontWeight: "bold",
         marginBottom: 8,
         color: "#fff",
+        textAlign: "center",
     },
     jogoPreco: {
+        flex: 1,
         fontSize: 14,
         color: "#c7c7c7ff",
     },
     jogoImagem: {
+        flex: 1,
         width: "100%",
         height: "30%",
-        marginBottom: 8,
         resizeMode: "center",
     },
     catalogoItemBotao: {
@@ -91,5 +95,16 @@ export default StyleSheet.create({
         borderRadius: 8,
         marginTop: 12,
         backgroundColor: "#272727ff",
+    },
+    catalogoItemBotaoRemocao: {
+        borderRadius: 8,
+        marginTop: 12,
+        backgroundColor: "#b80000ff",
+    },
+    botaoPagar: {
+        borderRadius: 8,
+        marginTop: 12,
+        bottom: 60,
+        backgroundColor: "#3ecc51ff",
     },
 });
