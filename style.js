@@ -1,96 +1,95 @@
-import { StyleSheet } from 'react-native';
+import { StyleSheet } from "react-native";
 
 export default StyleSheet.create({
     container: {
-        width: '100%',
-        height: '100%',
+        width: "100%",
+        height: "100%",
         flex: 1,
-        backgroundColor: '#fff',
-        alignItems: 'center',
-        justifyContent: 'center',
+        backgroundColor: "#fff",
+        alignItems: "center",
+        justifyContent: "center",
     },
     texto: {
         fontSize: 20,
-        alignItems: 'center', // corrigido spelling
-        justifyContent: 'center',
-        textAlign: 'center',
+        alignItems: "center", // corrigido spelling
+        justifyContent: "center",
+        textAlign: "center",
         margin: 10,
-        color: '#fff',
+        color: "#fff",
     },
     rodape: {
         fontSize: 12,
-        position: 'absolute',
+        position: "absolute",
         bottom: 30,
         right: 0,
-        textAlign: 'right',
+        textAlign: "right",
         padding: 10,
-        color: '#fff',
+        color: "#fff",
     },
     localMapa: {
-        width: '80%',
-        height: '80%',
+        width: "100%",
+        height: "100%",
     },
     localTitulo: {
         fontSize: 24,
-        fontWeight: 'bold',
+        fontWeight: "bold",
         marginBottom: 20,
-        color: '#fff',
-
+        color: "#fff",
     },
     catalogo: {
         flex: 1,
-        backgroundColor: '#ffc3c300',
-        alignItems: 'center',
-        justifyContent: 'center',
-        flexDirection: 'column',
-        flexWrap: 'wrap',
-        alignContent: 'space-evenly',
+        backgroundColor: "#ffc3c300",
+        alignItems: "center",
+        justifyContent: "center",
+        flexDirection: "column",
+        flexWrap: "wrap",
+        alignContent: "space-evenly",
     },
     catalogoListaRow: {
-        justifyContent: 'space-evenly', // separa colunas
+        justifyContent: "space-evenly", // separa colunas
     },
     catalogoLista: {
         paddingHorizontal: 8,
         paddingVertical: 12,
     },
     catalogoItem: {
-        backgroundColor: '#ffffff3d',
+        backgroundColor: "#ffffff3d",
         borderRadius: 8,
         padding: 16,
         marginBottom: 16,
-        alignItems: 'center',
-        width: '46%',
+        alignItems: "center",
+        width: "46%",
         height: 275,
     },
     jogoNome: {
         fontSize: 16,
-        fontWeight: 'bold',
+        fontWeight: "bold",
         marginBottom: 8,
-        color: '#fff',
+        color: "#fff",
     },
     jogoPreco: {
         fontSize: 14,
-        color: '#c7c7c7ff',
+        color: "#c7c7c7ff",
     },
     jogoImagem: {
-        width: '100%',
-        height: '30%',
+        width: "100%",
+        height: "30%",
         marginBottom: 8,
-        resizeMode: 'center',
+        resizeMode: "center",
     },
     catalogoItemBotao: {
         borderRadius: 8,
         marginTop: 12,
-        backgroundColor: '#427cb9ff',
+        backgroundColor: "#427cb9ff",
     },
     catalogoItemBotaoTexto: {
-        color: '#fff',
-        textAlign: 'center',
+        color: "#fff",
+        textAlign: "center",
         padding: 12,
     },
     catalogoItemBotaoDesabilitado: {
         borderRadius: 8,
         marginTop: 12,
-        backgroundColor: '#272727ff',
+        backgroundColor: "#272727ff",
     },
-})
+});
